@@ -120,7 +120,7 @@
 </style></head><body>
 <div class="header">
   <h1>🎯 高配当 選定レポート <span class="muted" style="font-size:0.7em;">NISA長期・長く持てる銘柄</span></h1>
-  <span class="muted small">生成: 2026-06-18 11:09</span>
+  <span class="muted small">生成: 2026-06-18 11:56</span>
 </div>
 <div class="tabs">
   <button class="tabbtn active" data-tab="list">📋 一覧（スクリーニング）</button>
@@ -10300,7 +10300,7 @@
   <div class="wrap" style="padding-top:0"><table class="reco-tbl">
     <thead><tr><th>コード</th><th>銘柄</th><th>カテゴリ</th><th class="num">利回り</th>
       <th class="num">PER</th><th class="num">PBR</th><th class="num">選定スコア</th><th>メモ</th><th>リンク</th></tr></thead>
-    <tbody><tr><td class="code">1716</td><td class="name">第一カッター興業</td><td class="sector">建設・インフラ</td><td class="num dy"><b>2.90%</b></td><td class="num">10.8</td><td class="num">0.80</td><td class="num"><span class="muted">—<span style="font-size:0.8em"> 選定外</span></span></td><td class="muted" style="text-align:left">連続増配・割安(PBR0.8)。利回り2.86%で高配当スクリーン外</td><td class="links"><a href="https://kabutan.jp/stock/?code=1716" target="_blank">株探</a> <a href="https://minkabu.jp/stock/1716/dividend" target="_blank">配当</a></td></tr></tbody></table></div>
+    <tbody><tr><td colspan="9" class="muted" style="padding:14px">検討リストは空です。</td></tr></tbody></table></div>
 </div><!-- /tab-watch -->
 
 <div id="tab-hisa" class="tabpane">
@@ -10570,8 +10570,8 @@
   renderReco();
 
   // ---- 久門ポートフォリオ（実保有・手動管理。PAY母集団には混ぜない別データ HPAY を使用）----
-  const HISA_EXTRA={};
-  const HISAKADO=[{"code": "3076", "shares": 100}, {"code": "1414", "shares": 100}, {"code": "2379", "shares": 100}, {"code": "4540", "shares": 100}, {"code": "8425", "shares": 100}, {"code": "9432", "shares": 100}, {"code": "2153", "shares": 100}, {"code": "1911", "shares": 100}, {"code": "3452", "shares": 100}, {"code": "9434", "shares": 100}, {"code": "1333", "shares": 100}, {"code": "6309", "shares": 100}];
+  const HISA_EXTRA={"1716": {"name": "第一カッター興業", "price": 1377.0, "dps": 40.0, "dy": 2.9, "sector": "建設・資材", "grp": "建設・インフラ", "otype": "中立", "pflag": "", "pth": "", "sc": 0.0, "pm": {"9": 40.0}}};
+  const HISAKADO=[{"code": "3076", "shares": 100}, {"code": "1414", "shares": 100}, {"code": "2379", "shares": 100}, {"code": "4540", "shares": 100}, {"code": "8425", "shares": 100}, {"code": "9432", "shares": 100}, {"code": "2153", "shares": 100}, {"code": "1911", "shares": 100}, {"code": "3452", "shares": 100}, {"code": "9434", "shares": 100}, {"code": "1333", "shares": 100}, {"code": "6309", "shares": 100}, {"code": "1716", "shares": 100}];
   const HPAY=Object.assign({}, PAY, HISA_EXTRA);
   function renderHisaTable(hold){
     const tb=document.getElementById('hisa-body'); if(!tb) return;
